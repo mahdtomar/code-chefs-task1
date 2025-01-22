@@ -1,0 +1,350 @@
+nav {
+    background-color: var(--main-color);
+    color: var(--off-white);
+}
+.customer-service {
+    background-color: var(--secondary-color);
+    font-size: 14px;
+    height: 36px;
+}
+.customer-service .container p span {
+    font-weight: bold;
+}
+.customer-service .orders-options {
+    gap: 30px;
+}
+.customer-service .orders-options a {
+    color: white;
+    text-decoration: none;
+    padding: 11px;
+}
+.search {
+    padding: 8px 0px;
+}
+.search .menu-image,
+.search .mobile-cart {
+    display: none;
+}
+.search img {
+    height: 24px;
+}
+.search .searchbox {
+    height: 56px;
+    position: relative;
+    width: 272px;
+}
+.search .searchbox input {
+    width: 100%;
+    font-size: large;
+    padding: 10px 32px 10px 16px;
+    border: 1px solid var(--grey);
+}
+.search .searchbox input:focus {
+    outline: none;
+}
+.search .searchbox svg {
+    position: absolute;
+    width: 20px;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-71%);
+}
+.search .searchbox svg path {
+    stroke: var(--main-color);
+}
+
+.menu ul {
+    list-style-type: none;
+    width: 85%;
+    flex-wrap: wrap;
+    gap: 5px 25px;
+    justify-content: flex-start;
+}
+.menu ul li {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.menu ul li:hover .sub-menu {
+    display: block;
+}
+.menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: var(--main-color);
+    width: 250px;
+}
+.menu ul li:hover .sub-menu,
+.menu .sub-menu:hover {
+    display: flex;
+    z-index: 4;
+}
+.menu .sub-menu li {
+    width: 100%;
+    align-items: stretch;
+}
+.menu .sub-menu a {
+    padding-left: 15px;
+    display: block;
+    width: 100%;
+}
+.menu ul li a {
+    color: var(--off-white);
+    text-decoration: none;
+    display: block;
+    padding: 15px 0px;
+    font-weight: bold;
+}
+.menu ul li a img {
+    display: block;
+    width: 10px;
+}
+.menu .cart {
+    gap: 20px;
+}
+.menu .cart-container {
+    position: relative;
+    padding: 10px;
+}
+.menu .cart-container:after {
+    content: "";
+    display: block;
+    height: 70%;
+    width: 3px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--secondary-color);
+}
+.menu .cart-container span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background-color: var(--off-white);
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+}
+.menu button {
+    background-color: transparent;
+    border: none;
+    color: var(--off-white);
+}
+
+.home-appliances .container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-top: 30px;
+}
+.home-appliances .sidebar span {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.home-appliances .sidebar ul {
+    gap: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.home-appliances .main h1 {
+    color: var(--main-color);
+    font-size: 64px;
+    margin-bottom: 64px;
+}
+.home-appliances .main > p {
+    color: var(--main-color);
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.main select {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    width: 200px;
+    font-family: var(--font-family);
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product-card {
+    width: 100%;
+}
+.product-image-container img {
+    width: 100%;
+}
+.product-image-container {
+    position: relative;
+}
+.product-details {
+    width: 100%;
+    padding-top: 10px;
+    padding-inline: 19px;
+}
+.product-details .product-name {
+    font-size: 15px;
+    text-align: left;
+    margin-block: 8px;
+}
+.sale-tag {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 0.4em 0.8em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    background-color: white;
+}
+.cart-tag {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    border-radius: 50%;
+    transition: visibility 0.3s ease;
+    width: 32px;
+    height: 32px;
+}
+.cart-tag img {
+    width: 17px;
+}
+.product-image-container:hover .cart-tag {
+    visibility: visible;
+}
+.product-details .product-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+.product-details .product-price .old-price {
+    text-decoration: line-through;
+    color: rgb(205, 205, 205);
+}
+.stars {
+    display: flex;
+}
+.stars img {
+    width: 16px;
+}
+
+@media screen and (max-width: 920px) {
+    nav {
+        padding: 10px 0px;
+    }
+    .customer-service,
+    nav .menu,
+    nav .search .searchbox,
+    nav .menu .cart {
+        display: none;
+    }
+    .search .menu-image,
+    .search .mobile-cart {
+        display: block;
+        cursor: pointer;
+    }
+    .search .mobile-cart {
+        padding-top: 12px;
+        padding-right: 10px;
+        position: relative;
+    }
+    .search .mobile-cart span {
+        position: absolute;
+        right: 0px;
+        top: 5px;
+        background-color: var(--off-white);
+        color: var(--main-color);
+        font-weight: bold;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: grid;
+        place-items: center;
+    }
+    .wrapper {
+        gap: 20px;
+    }
+    nav .menu.visible {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        justify-content: flex-start;
+        background-color: var(--off-white);
+        z-index: 5;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    .menu .sub-menu {
+        position: inherit;
+        background-color: var(--off-white);
+    }
+    .menu ul li {
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu ul li svg path {
+        stroke: black;
+    }
+    .menu ul li:hover .sub-menu {
+        display: none;
+    }
+    .menu ul li .sub-menu.visible {
+        display: block;
+    }
+    .menu ul li a {
+        color: var(--main-color);
+    }
+    .home-appliances .container {
+        grid-template-columns: 1fr;
+    }
+    .home-appliances .sidebar {
+        margin-top: 100px;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    *{
+    }
+    .container{
+        padding: 0px;
+    }
+    .home-appliances .main h1 {
+        font-size: 40px;
+    }
+    .main .sorting-container {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: white;
+        padding: 5px;
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: 1fr 1fr;
+    }
+    .sorting-container select {
+        display: block;
+        margin: auto;
+    }
+}
