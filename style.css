@@ -98,9 +98,6 @@ nav {
     gap: 10px;
     position: relative;
 }
-.menu ul li:hover .sub-menu {
-    display: block;
-}
 .menu .sub-menu {
     display: none;
     position: absolute;
@@ -108,6 +105,11 @@ nav {
     left: 0px;
     background-color: var(--main-color);
     width: 250px;
+}
+.menu ul li:hover .sub-menu,
+.menu .sub-menu:hover {
+    display: flex;
+    z-index: 4;
 }
 .menu .sub-menu li {
     width: 100%;
@@ -218,11 +220,14 @@ header .floating-box button {
 }
 .categories-features .features .card {
     gap: 10px;
+    width: 25%;
+}
+.categories-features .features .card  img {
+    width: 30px;
 }
 .categories-features .features .card .flexv p {
     font-weight: bold;
     font-size: 14px;
-    white-space: nowrap;
 }
 .categories-features .features .card .flexv span {
     opacity: 0.8;
@@ -240,7 +245,7 @@ header .floating-box button {
     height: 300px;
     text-align: center;
 }
-.categories-features .categories-container .category div{
+.categories-features .categories-container .category div {
     background-color: white;
     position: relative;
     z-index: 3;
@@ -309,6 +314,7 @@ header .floating-box button {
         position: absolute;
         justify-content: flex-start;
         background-color: var(--off-white);
+        z-index: 5;
     }
     .menu ul {
         flex-direction: column;
@@ -323,6 +329,9 @@ header .floating-box button {
         width: 100%;
         flex-direction: column;
     }
+    .menu ul li svg path{
+        stroke: black;
+    }
     .menu ul li:hover .sub-menu {
         display: none;
     }
@@ -331,5 +340,21 @@ header .floating-box button {
     }
     .menu ul li a {
         color: var(--main-color);
+    }
+    .categories-features .features {
+        width: 100%;
+    }
+    .categories-features .features .card {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .categories-features .categories-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .categories-features .categories-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
