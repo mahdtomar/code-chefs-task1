@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ---------------------start Section Brands-------------------------------  */
+
+.brands{
+ background-color: #ffffff;
+}.brands .brand-item-text{
+  padding: 20px;
+  background-color: #ffffff;
+
+}.brands .brand-item-text h5{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.brands .brand-item-text h2{
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.brands .brand-item-text p{
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.brands .brand-item-text button{
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0px;
+}
+.brands .brand-item-text button:hover{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+}
+.brands .brand-item-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------end Section Brands-------------------------------  */
+
+/* ---------------------start Top Section Brands-------------------------------  */
+.top-brands{
+  margin-bottom: 20px;
+
+
+}
+.top-brands .brand-item-img img{
+  height: 60px;
+  width: 60px;
+}
+.top-brands .brand-item-img p{
+  font-size: 17px;
+  color: #090909;
+  line-height: 1.6;
+  font-family:sans-serif;
+  font-weight: 700;
+}
+.top-brands .brand-item-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+/* ---------------------end Top Section Brands-------------------------------  */
+
+
+
+
+/* ---------------------start everyOne Section Brands-------------------------------  */
+.sayPeople-brands .col-md-4{
+  box-sizing: border-box;
+}
+
+.sayPeople-brands .img-testimonials .img-persone img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.sayPeople-brands .img-testimonials p{
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+   line-height: 1.6;
+}
+
+/* ---------------------end everyOne Section Brands-------------------------------  */
+
+
+/* <!-- /* ---------------------start  Section contact-------------------------------  */  
+.contact p{
+  color: rgb(18, 18, 18);
+  /* font-size: 20px; */
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.tex-underline{
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.btn-dark{
+  border: #000000;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+
+/* <!-- /* ---------------------end  Section contact-------------------------------  */  
+
+
+/* <!-- ---------------------start  Section Footer-------------------------------  --> */
+
+
+footer a{
+  text-decoration: none;
+
+}
+/* <!-- ---------------------end  Section Footer-------------------------------  --> */
+
+
+
+
+
