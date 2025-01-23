@@ -188,18 +188,18 @@ header .floating-box button {
     border: 1px solid var(--grey);
     flex-wrap: wrap;
 }
-.categories-features .features .card {
+.categories-features .features .feature-card {
     gap: 10px;
 }
-.categories-features .features .card:nth-child(1)  img{
+.categories-features .features .feature-card:nth-child(1) img {
     width: 40px;
-    transform:scale(1.2) ;
+    transform: scale(1.2);
 }
-.categories-features .features .card .flexv p {
+.categories-features .features .feature-card .flexv p {
     font-weight: bold;
     font-size: 14px;
 }
-.categories-features .features .card .flexv span {
+.categories-features .features .feature-card .flexv span {
     opacity: 0.8;
     font-size: 12px;
 }
@@ -334,17 +334,17 @@ header .floating-box button {
     border: 1px solid var(--grey);
     flex-wrap: wrap;
 }
-.categories-features .features .card {
+.categories-features .features .feature-card {
     gap: 10px;
 }
-.categories-features .features .card img {
+.categories-features .features .feature-card img {
     width: 30px;
 }
-.categories-features .features .card .flexv p {
+.categories-features .features .feature-card .flexv p {
     font-weight: bold;
     font-size: 14px;
 }
-.categories-features .features .card .flexv span {
+.categories-features .features .feature-card .flexv span {
     opacity: 0.8;
     font-size: 12px;
 }
@@ -457,18 +457,18 @@ nav .menu.visible {
         border: 1px solid var(--grey);
         flex-wrap: wrap;
     }
-    .categories-features .features .card {
+    .categories-features .features .feature-card {
         gap: 10px;
         width: 25%;
     }
-    .categories-features .features .card img {
+    .categories-features .features .feature-card img {
         width: 30px;
     }
-    .categories-features .features .card .flexv p {
+    .categories-features .features .feature-card .flexv p {
         font-weight: bold;
         font-size: 14px;
     }
-    .categories-features .features .card .flexv span {
+    .categories-features .features .feature-card .flexv span {
         opacity: 0.8;
         font-size: 12px;
     }
@@ -615,7 +615,7 @@ nav .menu.visible {
     .categories-features .features {
         width: 100%;
     }
-    .categories-features .features .card {
+    .categories-features .features .feature-card {
         width: 50%;
         justify-content: flex-start;
     }
